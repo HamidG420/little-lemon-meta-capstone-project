@@ -7,6 +7,7 @@
 /* General Header Container */
 .header {
   font-family: 'Karla', serif;
+  height: 12vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -22,6 +23,7 @@
 }
 
 .logoContainer img {
+  height: 100%;
   width: 100%;
 }
 
@@ -85,7 +87,12 @@
 
 .hamburgerIconContainer i,
 .closeIconContainer i {
-  font-size: 3rem;
+  margin-top: 1.5rem;
+  font-size: 4rem;
+}
+
+.closeIconContainer i {
+  font-size: 5rem;
 }
 
 .closeIconContainer i:hover,
@@ -95,11 +102,13 @@
 
 .closeIconContainer {
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 10%;
+  right: 10%;
 }
 
-/* Media Queries */
+/* 
+  Media Queries 
+*/
 
 /* 56.25em = 900px */
 @media screen and (min-width: 56.25em) {
@@ -155,7 +164,6 @@
   }
 
   .navbarContainer {
-    /* max-width: 50rem; */
     position: relative;
     width: 70%;
     max-width: 80rem;

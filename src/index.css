@@ -13,9 +13,9 @@
 }
 
 html {
-  /* font-size: 10px; 1 rem = 10px */
-  /* 10px / 16px = 0.625 = 62.5% */
-  font-size: 62.5%;
+  /* font-size: 9px; 1 rem = 9px */
+  /* 9px / 16px = 0.5625 = 56.25% */
+  font-size: 56.25%;
 }
 
 body {
@@ -35,10 +35,27 @@ body {
 /* CSS Variables */
 :root {
   --primary-color: #495e57;
+  --light-primary-color: #6d7e79;
+  --dark-primary-color: #3a4b46;
   --secondary-color: #f4ce14;
+  --light-secondary-color: #f7dd5b;
+  --dark-secondary-color: #ab900e;
   --tertiary-color: #ee9972;
   --quaternary-color: #fbdabb;
 
   --dark-gray: #333;
   --light-gray: #edefee;
+}
+
+/* 
+  Media Queries 
+*/
+
+/* 56.25em = 900px */
+@media screen and (min-width: 56.25em) {
+  html {
+    /* font-size: 10px; 1 rem = 10px */
+    /* 10px / 16px = 0.625 = 62.5% */
+    font-size: 62.5%;
+  }
 }
