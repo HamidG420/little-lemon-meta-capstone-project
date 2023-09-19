@@ -28,7 +28,7 @@
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 4rem;
-  color: var(--light-gray);
+  color: var(--first-light-gray);
 }
 
 .heroInfoParagraph {
@@ -37,7 +37,7 @@
   font-family: 'Karla', sans-serif;
   font-size: 1.8rem;
   line-height: 1.4;
-  color: var(--light-gray);
+  color: var(--first-light-gray);
 }
 
 .heroImgContainer {

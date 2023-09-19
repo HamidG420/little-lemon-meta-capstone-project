@@ -1,8 +1,9 @@
 import styles from './Button.module.css';
-const Button = ({ text, path }) => {
+const Button = ({ text, path, order, icon }) => {
   return (
-    <a href={path} className={styles.btn}>
-      {text}
+    <a href={path} className={order ? styles.orderBtn : styles.btn}>
+      <span>{text}</span>
+      {icon && <i>{icon}</i>}
     </a>
   );
 };
