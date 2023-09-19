@@ -1,5 +1,5 @@
 import greekSaladURL from '../Assets/greek salad.jpg';
-import bruchettaURL from '../Assets/bruchetta.svg';
+import bruchettaURL from '../Assets/bruchetta.jpg';
 import lemonDessertURL from '../Assets/lemon dessert.jpg';
 
 export const navItems = [
