@@ -1,13 +1,44 @@
-body {
+/*  Importing Karla Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+
+/*  Importing Markazi Text Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  /* font-size: 10px; 1 rem = 10px */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  position: relative;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/* CSS Variables */
+:root {
+  --primary-color: #495e57;
+  --secondary-color: #f4ce14;
+  --tertiary-color: #ee9972;
+  --quaternary-color: #fbdabb;
+
+  --dark-gray: #333;
+  --light-gray: #edefee;
 }
