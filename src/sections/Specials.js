@@ -1,4 +1,5 @@
 import Button from '../components/Button';
+import Heading from '../components/Heading';
 import SpecialCard from '../components/SpecialCard';
 import { specialsData } from '../constants';
 import styles from './Specials.module.css';
@@ -7,7 +8,7 @@ const Specials = () => {
   return (
     <section id="specials" className={styles.specialsContainer}>
       <div className={styles.specialsHeader}>
-        <h2 className={styles.specialsHeaderTitle}>This weeks specials!</h2>
+        <Heading title="This weeks specials!" />
         <Button
           text="Online Menu"
           path="/"

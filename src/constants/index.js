@@ -5,6 +5,8 @@ import reviewer1URL from '../Assets/Reviewer1.jpg';
 import reviewer2URL from '../Assets/Reviewer2.jpg';
 import reviewer3URL from '../Assets/Reviewer3.jpg';
 import reviewer4URL from '../Assets/Reviewer4.jpg';
+import adrianImgURL from '../Assets/Adrian.jpg';
+import marioImgURL from '../Assets/Mario.jpg';
 
 export const navItems = [
   'Home',
@@ -70,5 +72,7 @@ export const reviewers = [
 ];
 
 export const aboutUsData = {
+  adrianImgURL: adrianImgURL,
+  marioImgURL: marioImgURL,
   description: `Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. To craft the menu, Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.`,
 };

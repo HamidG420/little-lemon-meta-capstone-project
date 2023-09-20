@@ -1,3 +1,4 @@
+import Heading from '../components/Heading';
 import { reviewers } from '../constants';
 import {
   FaChevronCircleLeft,
@@ -24,7 +25,7 @@ const Testimonials = () => {
   };
   return (
     <section className={styles.carouselContainer}>
-      <h2 className={styles.carouselTitle}>Testimonials</h2>
+      <Heading title="Testimonials" headingType="testimonials" />
       <article className={styles.carousel}>
         {reviewers.map((reviewer, index) => {
           const { id, name, review, avatarURL } = reviewer;
