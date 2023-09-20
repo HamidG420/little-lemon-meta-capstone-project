@@ -41,7 +41,7 @@ body {
   3. Shade Color
   */
   --primary-color: #495e57;
-  --light-primary-color: #5b6e68;
+  --light-primary-color: #a4afab;
   --dark-primary-color: #3a4b46;
 
   --secondary-color: #f4ce14;
@@ -49,6 +49,7 @@ body {
   --dark-secondary-color: #ab900e;
 
   --tertiary-color: #ee9972;
+  --dark-tertiary-color: #be7a5b;
 
   --quaternary-color: #fbdabb;
 

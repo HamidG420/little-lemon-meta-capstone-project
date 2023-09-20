@@ -35,14 +35,15 @@
   width: max-content;
   display: inline-block;
   text-align: center;
-  color: var(--light-primary-color);
-  border-bottom: 1px solid var(--light-primary-color);
+  color: var(--tertiary-color);
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 .orderBtn:hover,
 .orderBtn:active {
-  color: var(--dark-primary-color);
-  border-bottom-color: var(--dark-primary-color);
+  color: var(--dark-tertiary-color);
+  border-bottom-color: transparent;
+  transform: translateY(-3px);
 }
 
 .orderBtn:link i,

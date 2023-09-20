@@ -16,7 +16,7 @@ const Specials = () => {
       </div>
       <div className={styles.specialsCardsContainer}>
         {specialsData.map((special) => (
-          <SpecialCard id={special.id} {...special} />
+          <SpecialCard key={special.id} {...special} />
         ))}
       </div>
     </section>

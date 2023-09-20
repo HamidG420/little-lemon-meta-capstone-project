@@ -1,6 +1,10 @@
 import greekSaladURL from '../Assets/greek salad.jpg';
 import bruchettaURL from '../Assets/bruchetta.jpg';
 import lemonDessertURL from '../Assets/lemon dessert.jpg';
+import reviewer1URL from '../Assets/Reviewer1.jpg';
+import reviewer2URL from '../Assets/Reviewer2.jpg';
+import reviewer3URL from '../Assets/Reviewer3.jpg';
+import reviewer4URL from '../Assets/Reviewer4.jpg';
 
 export const navItems = [
   'Home',
@@ -35,6 +39,33 @@ export const specialsData = [
     description:
       'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.',
     imgURL: lemonDessertURL,
+  },
+];
+
+export const reviewers = [
+  {
+    id: 1,
+    name: 'Tim',
+    review: `The food here is amazing, and the service is top-notch!`,
+    avatarURL: reviewer1URL,
+  },
+  {
+    id: 2,
+    name: 'Anna',
+    review: `Authentic flavors and a friendly staff. A must-visit!`,
+    avatarURL: reviewer2URL,
+  },
+  {
+    id: 3,
+    name: 'Steve',
+    review: `Perfect for events. Delicious food and great service.`,
+    avatarURL: reviewer3URL,
+  },
+  {
+    id: 4,
+    name: 'Sarah',
+    review: `Hidden gem with fantastic Mediterranean dishes!`,
+    avatarURL: reviewer4URL,
   },
 ];
 

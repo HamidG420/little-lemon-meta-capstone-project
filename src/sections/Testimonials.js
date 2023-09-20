@@ -1,4 +1,74 @@
+import { reviewers } from '../constants';
+import {
+  FaChevronCircleLeft,
+  FaChevronCircleRight,
+  FaQuoteRight,
+  FaStar,
+} from 'react-icons/fa';
+
+import styles from './Testimonials.module.css';
+import { useState } from 'react';
 const Testimonials = () => {
-  return <div>Testimonials</div>;
+  const [currentReviewer, setCurrentReviewer] = useState(0);
+
+  const previousClickHandler = function () {
+    setCurrentReviewer(
+      (prevReviewer) => (prevReviewer + reviewers.length - 1) % reviewers.length
+    );
+    console.log(reviewers[currentReviewer].name);
+  };
+
+  const nextClickHandler = function () {
+    setCurrentReviewer((prevReviewer) => (prevReviewer + 1) % reviewers.length);
+    console.log(reviewers[currentReviewer].name);
+  };
+  return (
+    <section className={styles.carouselContainer}>
+      <h2 className={styles.carouselTitle}>Testimonials</h2>
+      <article className={styles.carousel}>
+        {reviewers.map((reviewer, index) => {
+          const { id, name, review, avatarURL } = reviewer;
+          return (
+            <div
+              key={id}
+              className={styles.slide}
+              style={{
+                // order: currentReviewer === index ? -1 : 0,
+                transform: `translateX(${100 * (index - currentReviewer)}%)`,
+                // opacity: index === currentReviewer ? 1 : 0,
+                // visibility: index === currentReviewer ? 'visible' : 'hidden',
+                // overflow: currentReviewer === index ? 'visible' : 'hidden',
+              }}
+            >
+              <div className={styles.avatarContainer}>
+                <img
+                  src={avatarURL}
+                  alt={name + `photo`}
+                  className={styles.avatar}
+                />
+              </div>
+              <h3 className={styles.reviewerName}>{name}</h3>
+              <div>
+                {Array.from({ length: 5 }, (_, i) => (
+                  <span className={styles.starIcon} key={i}>
+                    <FaStar />
+                  </span>
+                ))}
+              </div>
+              <p className={styles.review}>{review}</p>
+              <FaQuoteRight className={styles.quoteIcon} />
+            </div>
+          );
+        })}
+      </article>
+      <button className={styles.btnChevronLeft} onClick={previousClickHandler}>
+        <FaChevronCircleLeft />
+      </button>
+
+      <button className={styles.btnChevronRight} onClick={nextClickHandler}>
+        <FaChevronCircleRight />
+      </button>
+    </section>
+  );
 };
 export default Testimonials;
