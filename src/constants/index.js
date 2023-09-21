@@ -7,15 +7,9 @@ import reviewer3URL from '../Assets/Reviewer3.jpg';
 import reviewer4URL from '../Assets/Reviewer4.jpg';
 import adrianImgURL from '../Assets/Adrian.jpg';
 import marioImgURL from '../Assets/Mario.jpg';
+import { FaXTwitter, FaSquareFacebook, FaInstagram } from 'react-icons/fa6';
 
-export const navItems = [
-  'Home',
-  'About',
-  'Menu',
-  'Reservations',
-  'Order Online',
-  'Login',
-];
+export const navItems = ['Home', 'About', 'Specials', 'Reservations'];
 
 export const specialsData = [
   {
@@ -76,3 +70,15 @@ export const aboutUsData = {
   marioImgURL: marioImgURL,
   description: `Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. To craft the menu, Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.`,
 };
+
+export const contactInformation = [
+  ['Address', 'Chicago, Illinois, USA'],
+  ['Phone', '312-938-7229'],
+  ['Email', 'hello@littlelemon.com'],
+];
+
+export const socialMediaInformation = [
+  ['https://www.x.com', <FaXTwitter />],
+  ['https://www.facebook.com', <FaSquareFacebook />],
+  ['https://www.instagram.com', <FaInstagram />],
+];

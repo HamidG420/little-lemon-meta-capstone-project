@@ -97,10 +97,10 @@
     max-width: 40rem;
   }
   .aboutUsAdrianImage {
-    top: -5%;
+    top: 0;
   }
 
   .aboutUsMarioImage {
-    bottom: -5%;
+    bottom: 0;
   }
 }

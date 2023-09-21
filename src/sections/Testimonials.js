@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fa';
 
 import styles from './Testimonials.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 const Testimonials = () => {
   const [currentReviewer, setCurrentReviewer] = useState(0);
 
@@ -16,13 +16,21 @@ const Testimonials = () => {
     setCurrentReviewer(
       (prevReviewer) => (prevReviewer + reviewers.length - 1) % reviewers.length
     );
-    console.log(reviewers[currentReviewer].name);
   };
 
   const nextClickHandler = function () {
     setCurrentReviewer((prevReviewer) => (prevReviewer + 1) % reviewers.length);
-    console.log(reviewers[currentReviewer].name);
   };
+
+  useEffect(() => {
+    const sliderId = setTimeout(() => {
+      nextClickHandler();
+    }, 2500);
+    return () => {
+      clearInterval(sliderId);
+    };
+  }, [currentReviewer]);
+
   return (
     <section className={styles.carouselContainer}>
       <Heading title="Testimonials" headingType="testimonials" />
