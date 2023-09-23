@@ -11,7 +11,7 @@ const Specials = () => {
         <Heading title="This weeks specials!" />
         <Button
           text="Online Menu"
-          path="/"
+          path="online-menu"
           className={styles.specialsHeaderBtn}
         />
       </div>

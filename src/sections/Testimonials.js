@@ -42,11 +42,10 @@ const Testimonials = () => {
               key={id}
               className={styles.slide}
               style={{
-                // order: currentReviewer === index ? -1 : 0,
                 transform: `translateX(${100 * (index - currentReviewer)}%)`,
-                // opacity: index === currentReviewer ? 1 : 0,
-                // visibility: index === currentReviewer ? 'visible' : 'hidden',
-                // overflow: currentReviewer === index ? 'visible' : 'hidden',
+                opacity: index === currentReviewer ? 1 : 0,
+                visibility: index === currentReviewer ? 'visible' : 'hidden',
+                overflow: currentReviewer === index ? 'visible' : 'hidden',
               }}
             >
               <div className={styles.avatarContainer}>
@@ -70,11 +69,19 @@ const Testimonials = () => {
           );
         })}
       </article>
-      <button className={styles.btnChevronLeft} onClick={previousClickHandler}>
+      <button
+        className={styles.btnChevronLeft}
+        onClick={previousClickHandler}
+        aria-label="Previous Slide"
+      >
         <FaChevronCircleLeft />
       </button>
 
-      <button className={styles.btnChevronRight} onClick={nextClickHandler}>
+      <button
+        className={styles.btnChevronRight}
+        onClick={nextClickHandler}
+        aria-label="Next Slide"
+      >
         <FaChevronCircleRight />
       </button>
     </section>

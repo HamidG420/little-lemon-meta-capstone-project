@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import styles from './Header.module.css';
-import { navItems } from '../constants';
-import logo from '../Assets/Logo.svg';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { nanoid } from 'nanoid';
+import { HashLink } from 'react-router-hash-link';
+import { navItems } from '../constants';
+import logo from '../assets/Logo.svg';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { scrollWithOffset } from '../utils/utils';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
@@ -20,9 +23,14 @@ const Header = () => {
         <ul className={styles.navbar}>
           {navItems.map((item) => (
             <li key={nanoid()} className={styles.navItem}>
-              <a href="/" className={styles.navLink}>
-                {item}
-              </a>
+              <HashLink
+                to={item.path}
+                className={styles.navLink}
+                scroll={scrollWithOffset}
+                onClick={() => (showMenu ? setShowMenu(false) : '')}
+              >
+                {item.name}
+              </HashLink>
             </li>
           ))}
         </ul>

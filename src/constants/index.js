@@ -1,15 +1,32 @@
-import greekSaladURL from '../Assets/greek salad.jpg';
-import bruchettaURL from '../Assets/bruchetta.jpg';
-import lemonDessertURL from '../Assets/lemon dessert.jpg';
-import reviewer1URL from '../Assets/Reviewer1.jpg';
-import reviewer2URL from '../Assets/Reviewer2.jpg';
-import reviewer3URL from '../Assets/Reviewer3.jpg';
-import reviewer4URL from '../Assets/Reviewer4.jpg';
-import adrianImgURL from '../Assets/Adrian.jpg';
-import marioImgURL from '../Assets/Mario.jpg';
+import greekSaladURL from '../assets/greek salad.jpg';
+import bruchettaURL from '../assets/bruchetta.jpg';
+import lemonDessertURL from '../assets/lemon dessert.jpg';
+import reviewer1URL from '../assets/Reviewer1.jpg';
+import reviewer2URL from '../assets/Reviewer2.jpg';
+import reviewer3URL from '../assets/Reviewer3.jpg';
+import reviewer4URL from '../assets/Reviewer4.jpg';
+import adrianImgURL from '../assets/Adrian.jpg';
+import marioImgURL from '../assets/Mario.jpg';
 import { FaXTwitter, FaSquareFacebook, FaInstagram } from 'react-icons/fa6';
 
-export const navItems = ['Home', 'About', 'Specials', 'Reservations'];
+export const navItems = [
+  {
+    name: 'Home',
+    path: '/',
+  },
+  {
+    name: 'About',
+    path: '/#aboutUs',
+  },
+  {
+    name: 'Specials',
+    path: '/#specials',
+  },
+  {
+    name: 'Reservations',
+    path: 'booking',
+  },
+];
 
 export const specialsData = [
   {

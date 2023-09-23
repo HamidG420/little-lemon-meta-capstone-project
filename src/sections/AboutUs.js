@@ -1,6 +1,6 @@
+import styles from './AboutUs.module.css';
 import Heading from '../components/Heading';
 import { aboutUsData } from '../constants';
-import styles from './AboutUs.module.css';
 
 const AboutUs = () => {
   return (

@@ -12,12 +12,13 @@
   grid-template-columns: repeat(2, 1fr);
   font-size: 2rem;
   font-family: 'Karla', sans-serif;
-  color: var(--first-dark-gray);
-  background-color: var(--quaternary-color);
+  color: var(--first-light-gray);
+  background-color: var(--primary-color);
 }
 
 .footerLogo {
   max-width: 10rem;
+  filter: brightness(0) invert(1);
 }
 
 .footerTitleSection {
@@ -50,7 +51,7 @@
 
 .footerSocialNetworkLink:link,
 .footerSocialNetworkLink:visited {
-  color: var(--primary-color);
+  color: var(--first-light-gray);
   font-size: 3rem;
   transition: color 0.2s ease;
 }
@@ -59,7 +60,7 @@
 .footerSocialNetworkLink:active,
 .footerNavLink:hover,
 .footerNavLink:active {
-  color: var(--dark-tertiary-color);
+  color: var(--light-secondary-color);
 }
 
 .footerCopyrightContainer {

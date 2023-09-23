@@ -16,6 +16,7 @@ html {
   /* font-size: 9px; 1 rem = 9px */
   /* 9px / 16px = 0.5625 = 56.25% */
   font-size: 56.25%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   background-color: var(--first-light-gray);
   color: var(--first-dark-gray);
   position: relative;
+  overflow-x: hidden;
 }
 
 .container {

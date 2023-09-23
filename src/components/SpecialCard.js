@@ -22,7 +22,6 @@ const SpecialCard = ({ title, price, description, imgURL }) => {
           order
           icon={<MdDeliveryDining />}
         />
-        {/* <i className={styles.cardOrderDeliveryIcon}></i> */}
       </div>
     </article>
   );

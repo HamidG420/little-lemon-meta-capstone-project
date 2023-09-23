@@ -1,10 +1,15 @@
+import { Link } from 'react-router-dom';
 import styles from './Button.module.css';
 const Button = ({ text, path, order, icon }) => {
   return (
-    <a href={path} className={order ? styles.orderBtn : styles.btn}>
+    <Link
+      to={path}
+      className={order ? styles.orderBtn : styles.btn}
+      aria-label={order ? 'Order Button' : 'Button'}
+    >
       <span>{text}</span>
       {icon && <i>{icon}</i>}
-    </a>
+    </Link>
   );
 };
 export default Button;
