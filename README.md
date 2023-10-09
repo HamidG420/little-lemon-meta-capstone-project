@@ -1,5 +1,9 @@
 # Little Lemon Meta Capstone Project
 
+## Project in Action
+
+[Little Lemon Restaurant](https://little-lemon-restaurant-project.netlify.app)
+
 ## Introduction
 
 This demo project was designed and developed for the Capstone Project course of the front-end developer program offered by Meta. This project is based on a scenario involving a fictional restaurant called Little Lemon.
