@@ -4,6 +4,11 @@
 
 [Little Lemon Restaurant](https://little-lemon-restaurant-project.netlify.app)
 
+## Figma Links
+
+[Little Lemon Figma Files Part 1](https://www.figma.com/file/IEN61N42Q7wzXJDFY9fHsd/Little-Lemon-Reservation-Table-Project-Part-1?type=design&mode=design&t=5JQZFomXVlxzBkyl-1)
+[Little Lemon Figma Files Part 2](https://www.figma.com/file/0EPcicjOb7Yuzd2gzbZTO4/Little-Lemon-Reservation-Table-Project-Part-2?type=design&mode=design&t=5JQZFomXVlxzBkyl-1)
+
 ## Introduction
 
 This demo project was designed and developed for the Capstone Project course of the front-end developer program offered by Meta. This project is based on a scenario involving a fictional restaurant called Little Lemon.
